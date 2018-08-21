@@ -1,97 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a46799e-29b6-4c85-b4d8-0d4d6c3f8910" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a5770781-916c-4ab9-8a50-4bfd2013d9e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/BoardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/Cell.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/GameTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1404669459">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="2442" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2442" />
-        </counts>
-      </usages-collector>
-    </session>
     <session id="-1382578971">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="615" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="615" />
-        </counts>
-      </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
+          <entry key="java" value="5" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="5" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="884">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Board.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BoardTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding>
+                <element signature="e#202#203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,14 +115,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/CellTest.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/Cell.java" />
-        <option value="$PROJECT_DIR$/src/BoardTest.java" />
-        <option value="$PROJECT_DIR$/src/Board.java" />
-        <option value="$PROJECT_DIR$/src/Game.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -127,10 +124,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,6 +144,16 @@
             <path>
               <item name="Conway-s-Game-of-Life" type="b2602c69:ProjectViewProjectNode" />
               <item name="Conway-s-Game-of-Life" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Conway-s-Game-of-Life" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Conway-s-Game-of-Life" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Conway-s-Game-of-Life" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Conway-s-Game-of-Life" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -160,15 +163,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534809323380" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534809846781" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,22 +177,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.BoardTest">
-    <configuration name="BoardTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GameTest">
+    <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GameOfLife" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BoardTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardTest.testInitializeCell" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GameOfLife" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BoardTest" />
-      <option name="METHOD_NAME" value="testInitializeCell" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,40 +194,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameTest.testNoOneAlive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GameOfLife" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="testNoOneAlive" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.testSingleCellShouldDieInNextIteration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GameOfLife" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameTest" />
-      <option name="METHOD_NAME" value="testSingleCellShouldDieInNextIteration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Android JUnit.BoardTest" />
+      <item itemvalue="JUnit.BoardTest" />
       <item itemvalue="JUnit.GameTest" />
-      <item itemvalue="JUnit.BoardTest.testInitializeCell" />
-      <item itemvalue="JUnit.GameTest.testNoOneAlive" />
-      <item itemvalue="JUnit.GameTest.testSingleCellShouldDieInNextIteration" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.BoardTest" />
         <item itemvalue="JUnit.GameTest" />
-        <item itemvalue="JUnit.GameTest.testSingleCellShouldDieInNextIteration" />
-        <item itemvalue="JUnit.GameTest.testNoOneAlive" />
-        <item itemvalue="JUnit.BoardTest.testInitializeCell" />
+        <item itemvalue="JUnit.BoardTest" />
       </list>
     </recent_temporary>
   </component>
@@ -258,44 +216,17 @@
       <option name="presentableId" value="Default" />
       <updated>1534818141228</updated>
       <workItem from="1534818144148" duration="8894000" />
-      <workItem from="1534806774892" duration="2545000" />
+      <workItem from="1534806774892" duration="3066000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest - 2018.08.21 at 11h 50m 16s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2018.08.21 at 11h 50m 21s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2561.08.21 at 06h 14m 26s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2561.08.21 at 06h 14m 28s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_testNoOneAlive - 2561.08.21 at 06h 43m 16s.xml">
-      <configuration name="GameTest.testNoOneAlive" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_testNoOneAlive - 2561.08.21 at 06h 43m 18s.xml">
-      <configuration name="GameTest.testNoOneAlive" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_testSingleCellShouldDieInNextIteration - 2561.08.21 at 06h 43m 24s.xml">
-      <configuration name="GameTest.testSingleCellShouldDieInNextIteration" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2561.08.21 at 06h 43m 47s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest - 2561.08.21 at 06h 47m 12s.xml">
-      <configuration name="GameTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest - 2561.08.21 at 06h 47m 33s.xml">
-      <configuration name="BoardTest" configurationId="AndroidJUnit" />
+    <history-entry file="BoardTest - 2561.08.21 at 07h 02m 02s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11439000" />
+    <option name="totallyTimeSpent" value="162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="0" />
@@ -310,7 +241,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32786885" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32786885" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -319,7 +250,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32786885" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32786885" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,9 +262,6 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -342,17 +270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -376,46 +293,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
+        <state relative-caret-position="663">
           <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="85">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#68#69#0" expanded="true" />
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#252#253#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="102">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#187#188#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
         </state>
       </provider>
     </entry>
