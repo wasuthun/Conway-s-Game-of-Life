@@ -89,8 +89,37 @@ public class Board {
             numNeighbors = cells[row - 1][col + 1].isAlive() ? numNeighbors + 1 : numNeighbors;
         }
         // Look N
-        if ((row - 1 >= 0) && (col < cells[0].length)) {
+        if ((row - 1 > = 0) && (col < cells[0].length)) {
             numNeighbors = cells[row - 1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
+        }
+        //Extra Case
+        //NW
+        if((row-1<0)&&(col-1<0))
+            numNeighbors = cells[cells.length-1][cells[0].length-1].isAlive() ? numNeighbors + 1 : numNeighbors;
+        //SE
+        if((row+1>=cells.length)&&(col+1>=cells[0].length))
+            numNeighbors = cells[0][0].isAlive() ? numNeighbors + 1 : numNeighbors;
+        //NE
+        if((row-1<0)&&(col+1>=cells[0].length))
+            numNeighbors = cells[0][cells[0].length-1].isAlive() ? numNeighbors + 1 : numNeighbors;
+        //SW
+        if((col-1<0)&&(row+1>=cells.length))
+            numNeighbors = cells[cells.length-1][0].isAlive() ? numNeighbors + 1 : numNeighbors;
+        //N
+        if ((row - 1 < 0) && (col < cells[0].length)) {
+            numNeighbors = cells[cells.length-1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
+        }
+        //S
+        if ((row + 1 >= cells.length) && (col < cells[0].length)) {
+            numNeighbors = cells[0][col].isAlive() ? numNeighbors + 1 : numNeighbors;
+        }
+        //E
+        if ((row < cells.length) && (col + 1 >= cells[0].length)) {
+            numNeighbors = cells[row][0].isAlive() ? numNeighbors + 1 : numNeighbors;
+        }
+        // Look W
+        if ((row >= 0) && (col - 1 < 0)) {
+            numNeighbors = cells[row][cells[0].length].isAlive() ? numNeighbors + 1 : numNeighbors;
         }
 
         return numNeighbors;
