@@ -89,7 +89,7 @@ public class Board {
             numNeighbors = cells[row - 1][col + 1].isAlive() ? numNeighbors + 1 : numNeighbors;
         }
         // Look N
-        if ((row - 1 > = 0) && (col < cells[0].length)) {
+        if ((row - 1 >= 0) && (col < cells[0].length)) {
             numNeighbors = cells[row - 1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
         }
         //Extra Case
