@@ -10,15 +10,7 @@ public class Game {
     }
 
     public int getCountCellAlive() {
-        int count = 0;
-        Cell[][] curBlock = board.getCells();
-        for (int i = 0; i < dimension; i++) {
-            for (int j = 0; j < dimension; j++) {
-                if (curBlock[i][j].isAlive())
-                    count++;
-            }
-        }
-        return count;
+        return board.getLiveCount();
     }
 
     public int getCountCellNotAlive() {
@@ -33,14 +25,16 @@ public class Game {
         return count;
     }
 
-    public void setCellAlive(int row, int col) {
-        board.setCellAlive(row, col);
+    public void toggleCellAlive(int row, int col) {
+        if (isCellAlive(row, col))
+            board.setCellDie(row, col);
+        else
+            board.setCellLive(row, col);
     }
 
-    public void setCellDie(int row, int col) {
-        board.setCellDie(row, col);
+    private boolean isCellAlive(int row, int col) {
+        return board.getCell(row, col).isAlive();
     }
-
 
     public Board getBoard() {
         return board;
@@ -50,12 +44,11 @@ public class Game {
     public void nextGeneration() {
         board.nextGeneration();
     }
-    
 
     public void printGame() {
         for (int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
-                if (board.getCells()[i][j].isAlive()) {
+                if (isCellAlive(i, j)) {
                     System.out.print("■");
                 } else {
                     System.out.print("□");

@@ -17,7 +17,7 @@ public class BoardTest extends TestCase {
     }
 
     public void testCountNeighbors() {
-        board.setCellAlive(10, 10);
+        board.setCellLive(10, 10);
         assertEquals(1, board.countNeighbors(9, 9));
     }
 

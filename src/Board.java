@@ -1,12 +1,20 @@
 public class Board {
+
     private Cell[][] cells;
 
-    private int liveCount;
+    public int getLiveCount() {
+        int count = 0;
+        for (int i = 0; i < cells.length; i++)
+            for (int j = 0; j < cells.length; j++)
+                if (cells[i][j].isAlive())
+                    count++;
+        return count;
+    }
 
     public void initializeCells(int dimension) {
         cells = new Cell[dimension][dimension];
-        for (int i = 0; i < 20; i++) {
-            for (int j = 0; j < 20; j++) {
+        for (int i = 0; i < dimension; i++) {
+            for (int j = 0; j < dimension; j++) {
                 cells[i][j] = new Cell();
             }
         }
@@ -16,7 +24,12 @@ public class Board {
         return cells;
     }
 
-    public void setCellAlive(int row, int col) {
+    public Cell getCell(int row, int col) {
+        return this.cells[row][col];
+    }
+
+
+    public void setCellLive(int row, int col) {
         cells[row][col].setAlive(true);
     }
 
@@ -31,14 +44,14 @@ public class Board {
                 final int numNeighbors = countNeighbors(row, col);
                 // If under-populated or over-populated, cell dies
                 if ((numNeighbors < 2) || (numNeighbors > 3)) {
-                    cells[row][col].setAlive(false);
+                    setCellDie(row, col);
                 }
                 // No change
                 if (numNeighbors == 2) {
                 }
                 // Cell stays alive, or a new cell is born
                 if (numNeighbors == 3) {
-                    cells[row][col].setAlive(true);
+                    setCellLive(row, col);
                 }
             }
         }
@@ -47,7 +60,6 @@ public class Board {
 
     public int countNeighbors(int row, int col) {
         int numNeighbors = 0;
-
         // Look NW
         if ((row - 1 >= 0) && (col - 1 >= 0)) {
             numNeighbors = cells[row - 1][col - 1].isAlive() ? numNeighbors + 1 : numNeighbors;
