@@ -75,9 +75,9 @@ public class Game {
         for (int i = 0; i <20 ; i++) {
             for (int j = 0; j <20 ; j++) {
                 if(board.getBlock()[i][j].getIsAlive()){
-                    System.out.print("1");
+                    System.out.print("x");
                 }else{
-                    System.out.print("0");
+                    System.out.print("-");
                 }
             }
             System.out.println();
