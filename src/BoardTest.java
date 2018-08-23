@@ -1,14 +1,14 @@
 import junit.framework.*;
 
 public class BoardTest extends TestCase {
-    private Board board = new Board();
+    private Board board;
 
 
     public void setUp() {
-        board.initializeCells(20);
+        board = new Board(20);
     }
 
-    public void testInitializeCell() {
+    public void testInitializeCells() {
         for (int i = 0; i < 20; i++) {
             for (int j = 0; j < 20; j++) {
                 assertEquals(false, board.getCells()[i][j].isAlive());

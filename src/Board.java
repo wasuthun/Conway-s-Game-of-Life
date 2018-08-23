@@ -1,17 +1,19 @@
 public class Board {
 
     private Cell[][] cells;
+    private int liveCount = 0;
+    private int dimension;
 
     public int getLiveCount() {
-        int count = 0;
-        for (int i = 0; i < cells.length; i++)
-            for (int j = 0; j < cells.length; j++)
-                if (cells[i][j].isAlive())
-                    count++;
-        return count;
+        return this.liveCount;
     }
 
-    public void initializeCells(int dimension) {
+    public Board(int dimension) {
+        this.dimension = dimension;
+        initializeCells();
+    }
+
+    public void initializeCells() {
         cells = new Cell[dimension][dimension];
         for (int i = 0; i < dimension; i++) {
             for (int j = 0; j < dimension; j++) {
@@ -24,39 +26,53 @@ public class Board {
         return cells;
     }
 
-    public Cell getCell(int row, int col) {
-        return this.cells[row][col];
+    private boolean isCellAlive(int row, int column) {
+        return this.getCells()[row][column].isAlive();
     }
 
 
-    public void setCellLive(int row, int col) {
-        cells[row][col].setAlive(true);
+    public void setCellLive(int row, int column) {
+        cells[row][column].setAlive(true);
+        liveCount++;
     }
 
-    public void setCellDie(int row, int col) {
-        cells[row][col].setAlive(false);
+    public void setCellDie(int row, int column) {
+        cells[row][column].setAlive(false);
+        liveCount--;
     }
 
     public void nextGeneration() {
         // Decide the fate of each cell
-        for (int row = 0; row < cells.length; ++row) {
-            for (int col = 0; col < cells[row].length; ++col) {
+        for (int row = 0; row < dimension; ++row) {
+            for (int col = 0; col < dimension; ++col) {
                 final int numNeighbors = countNeighbors(row, col);
-                // If under-populated or over-populated, cell dies
-                if ((numNeighbors < 2) || (numNeighbors > 3)) {
-                    setCellDie(row, col);
-                }
-                // No change
-                if (numNeighbors == 2) {
-                }
-                // Cell stays alive, or a new cell is born
-                if (numNeighbors == 3) {
-                    setCellLive(row, col);
+                // If under-populated or over-populated, cell dies.
+                if (isCellAlive(row, col)) {
+                    if ((numNeighbors < 2) || (numNeighbors > 3))
+                        setCellDie(row, col);
+                } else {
+                    if (numNeighbors == 3)
+                        setCellLive(row, col);
                 }
             }
         }
     }
 
+//    private boolean isWestOutOfBound(int col) {
+//        return (col - 1 >= 0);
+//    }
+//
+//    private boolean isNorthOutOfBound(int row) {
+//        return (row - 1 >= 0);
+//    }
+//
+//    private boolean isSouthOutOfBound(int row) {
+//        return (row + 1 < dimension);
+//    }
+//
+//    private boolean isEastOutOfBound(int col) {
+//        return (col + 1 < dimension);
+//    }
 
     public int countNeighbors(int row, int col) {
         int numNeighbors = 0;
@@ -91,35 +107,6 @@ public class Board {
         // Look N
         if ((row - 1 >= 0) && (col < cells[0].length)) {
             numNeighbors = cells[row - 1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
-        }
-        //Extra Case
-        //NW
-        if((row-1<0)&&(col-1<0))
-            numNeighbors = cells[cells.length-1][cells[0].length-1].isAlive() ? numNeighbors + 1 : numNeighbors;
-        //SE
-        if((row+1>=cells.length)&&(col+1>=cells[0].length))
-            numNeighbors = cells[0][0].isAlive() ? numNeighbors + 1 : numNeighbors;
-        //NE
-        if((row-1<0)&&(col+1>=cells[0].length))
-            numNeighbors = cells[0][cells[0].length-1].isAlive() ? numNeighbors + 1 : numNeighbors;
-        //SW
-        if((col-1<0)&&(row+1>=cells.length))
-            numNeighbors = cells[cells.length-1][0].isAlive() ? numNeighbors + 1 : numNeighbors;
-        //N
-        if ((row - 1 < 0) && (col < cells[0].length)) {
-            numNeighbors = cells[cells.length-1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
-        }
-        //S
-        if ((row + 1 >= cells.length) && (col < cells[0].length)) {
-            numNeighbors = cells[0][col].isAlive() ? numNeighbors + 1 : numNeighbors;
-        }
-        //E
-        if ((row < cells.length) && (col + 1 >= cells[0].length)) {
-            numNeighbors = cells[row][0].isAlive() ? numNeighbors + 1 : numNeighbors;
-        }
-        // Look W
-        if ((row >= 0) && (col - 1 < 0)) {
-            numNeighbors = cells[row][cells[0].length].isAlive() ? numNeighbors + 1 : numNeighbors;
         }
 
         return numNeighbors;
