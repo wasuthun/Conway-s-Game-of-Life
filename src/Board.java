@@ -5,6 +5,7 @@ public class Board {
     private int dimension;
     private int eightsDirections[][]={{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
 
+
     public int getLiveCount() {
         return this.liveCount;
     }
@@ -77,6 +78,7 @@ public class Board {
 
     public int countNeighbors(int row, int col) {
         int numNeighbors = 0;
+
 //        // Look NW
 //        if ((row - 1 >= 0) && (col - 1 >= 0)) {
 //            numNeighbors = cells[row - 1][col - 1].isAlive() ? numNeighbors + 1 : numNeighbors;
@@ -110,16 +112,15 @@ public class Board {
 //            numNeighbors = cells[row - 1][col].isAlive() ? numNeighbors + 1 : numNeighbors;
 //        }
         for (int i = 0; i < eightsDirections.length; i++) {
-            if (row+eightsDirections[i][0]<0||col+eightsDirections[i][1]<0||row+eightsDirections[i][0]>=cells.length||col+eightsDirections[i][1]>=cells.length){
+            if (row + eightsDirections[i][0] < 0 || col + eightsDirections[i][1] < 0 || row + eightsDirections[i][0] >= cells.length || col + eightsDirections[i][1] >= cells.length) {
 
+            } else if (cells[row + eightsDirections[i][0]][col + eightsDirections[i][1]].isAlive()) {
+                numNeighbors++;
             }
 
-            else
-              if(cells[row+eightsDirections[i][0]][col+eightsDirections[i][1]].isAlive()){
-               numNeighbors++;
-           }
-        }
 
+        }
         return numNeighbors;
     }
+
 }
