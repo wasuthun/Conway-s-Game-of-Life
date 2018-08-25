@@ -16,8 +16,5 @@ public class Main {
             g.printGame();
             System.out.println("====================================");
         }
-
-
     }
-
 }

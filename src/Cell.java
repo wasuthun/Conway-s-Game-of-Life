@@ -1,15 +1,20 @@
 public class Cell {
-    private boolean alive;
+    private boolean aliveState;
 
     public Cell() {
-        this.alive = false;
+        this.aliveState = false;
     }
 
     public boolean isAlive() {
-        return alive;
+        return aliveState;
     }
 
     public void setAlive(boolean isAlive) {
-        this.alive = isAlive;
+        this.aliveState = isAlive;
     }
+
+    public void nextState() {
+        this.aliveState = !this.aliveState;
+    }
+
 }

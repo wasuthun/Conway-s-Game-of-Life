@@ -3,7 +3,6 @@ import junit.framework.*;
 public class BoardTest extends TestCase {
     private Board board;
 
-
     public void setUp() {
         board = new Board(20);
     }
@@ -17,7 +16,7 @@ public class BoardTest extends TestCase {
     }
 
     public void testCountNeighbors() {
-        board.setCellLive(10, 10);
+        board.setCellLiveAt(10, 10);
         assertEquals(1, board.countNeighbors(9, 9));
     }
 
