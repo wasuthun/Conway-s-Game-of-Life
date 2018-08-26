@@ -2,8 +2,6 @@ public class Board {
 
     private Cell[][] cells;
     private int dimension;
-    private int neighborOffsets[][] = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
-
 
     public int getLiveCount() {
         int count = 0;
@@ -48,24 +46,43 @@ public class Board {
         cells[row][column].setAlive(false);
     }
 
-    private boolean hasNeighbor(int row, int column) {
-        return isValidPosition(row, column) && isCellAliveAt(row, column);
+    private boolean hasNeighborAt(int row, int column) {
+        return isValidPositionAt(row, column) && isCellAliveAt(row, column);
     }
 
-    private boolean isValidPosition(int row, int column) {
+    private boolean isValidPositionAt(int row, int column) {
         return (row >= 0 && column >= 0 && row < cells.length && column < cells.length);
     }
 
     public int countNeighbors(int row, int col) {
         int numNeighbors = 0;
-        for (int i = 0; i < neighborOffsets.length; i++) {
-            int rowOffset = neighborOffsets[i][0];
-            int columnOffset = neighborOffsets[i][1];
-            int lookupRow = row + rowOffset;
-            int lookupColumn = col + columnOffset;
-            if (hasNeighbor(lookupRow, lookupColumn))
+        // check all directions around.
+        for (Direction direction : Direction.values()) {
+            int lookupRow = row + direction.rowOffset;
+            int lookupColumn = col + direction.columnOffset;
+            if (hasNeighborAt(lookupRow, lookupColumn))
                 numNeighbors++;
         }
         return numNeighbors;
     }
+
+    enum Direction {
+        NORTHWEST(-1, -1),
+        NORTH(0, -1),
+        NORTHEAST(1, -1),
+        EAST(1, 0),
+        SOUTHEAST(1, 1),
+        SOUTH(0, 1),
+        SOUTHWEST(-1, 1),
+        WEST(-1, 0);
+
+        final int rowOffset;
+        final int columnOffset;
+
+        Direction(int rowOffset, int columnOffset) {
+            this.rowOffset = rowOffset;
+            this.columnOffset = columnOffset;
+        }
+    }
 }
+
