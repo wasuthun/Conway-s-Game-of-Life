@@ -6,7 +6,7 @@ public class Main {
         g.randomBoard();
         g.printGame();
         System.out.println("====================================");
-        for (int i = 1; i < 30; i++) {
+        for (int i = 0; i < 30; i++) {
             g.nextGeneration();
             g.printGame();
             System.out.println("====================================");

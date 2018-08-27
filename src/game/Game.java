@@ -17,8 +17,8 @@ public class Game {
     }
 
     public void randomBoard() {
-        for (int row = 0; row < 20; row++) {
-            for (int col = 0; col < 20; col++) {
+        for (int row = 0; row < dimension; row++) {
+            for (int col = 0; col < dimension; col++) {
                 boolean isAlive = rand.nextBoolean();
                 if (isAlive)
                     setCellLiveAt(row, col);

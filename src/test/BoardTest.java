@@ -36,4 +36,15 @@ public class BoardTest extends TestCase {
         assertEquals(8, board.countNeighbors(10, 10));
     }
 
+    public void testSimpleCountNeighbors() {
+        board.setCellLiveAt(9, 9);
+        board.setCellLiveAt(9, 10);
+        board.setCellLiveAt(9, 11);
+        board.setCellLiveAt(10, 9);
+        assertEquals(4, board.countNeighbors(10, 10));
+        assertEquals(2, board.countNeighbors(10, 9));
+        assertEquals(2, board.countNeighbors(9, 9));
+        assertEquals(3, board.countNeighbors(9, 10));
+    }
+
 }
