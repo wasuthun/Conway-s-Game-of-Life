@@ -1,3 +1,5 @@
+package game;
+
 public class Board {
 
     private Cell[][] cells;
@@ -14,16 +16,15 @@ public class Board {
 
     public Board(int dimension) {
         this.dimension = dimension;
+        cells = new Cell[dimension][dimension];
         initializeCells();
     }
 
     public void initializeCells() {
         cells = new Cell[dimension][dimension];
-        for (int i = 0; i < dimension; i++) {
-            for (int j = 0; j < dimension; j++) {
+        for (int i = 0; i < dimension; i++)
+            for (int j = 0; j < dimension; j++)
                 cells[i][j] = new Cell();
-            }
-        }
     }
 
     public Cell[][] getCells() {
@@ -47,42 +48,25 @@ public class Board {
     }
 
     private boolean hasNeighborAt(int row, int column) {
-        return isValidPositionAt(row, column) && isCellAliveAt(row, column);
+        return isNotOutOfBound(row, column) && isCellAliveAt(row, column);
     }
 
-    private boolean isValidPositionAt(int row, int column) {
+    private boolean isNotOutOfBound(int row, int column) {
         return (row >= 0 && column >= 0 && row < cells.length && column < cells.length);
+    }
+
+    private boolean isOffsetNotLocationItself(int offsetRow, int offsetColumn) {
+        return (offsetRow != 0 || offsetColumn != 0);
     }
 
     public int countNeighbors(int row, int col) {
         int numNeighbors = 0;
         // check all directions around.
-        for (Direction direction : Direction.values()) {
-            int lookupRow = row + direction.rowOffset;
-            int lookupColumn = col + direction.columnOffset;
-            if (hasNeighborAt(lookupRow, lookupColumn))
-                numNeighbors++;
-        }
+        for (int rowOffset = -1; rowOffset <= 1; rowOffset++)
+            for (int columnOffset = -1; columnOffset <= 1; columnOffset++)
+                if (isOffsetNotLocationItself(rowOffset, columnOffset) && hasNeighborAt(row + rowOffset, col + columnOffset))
+                    numNeighbors++;
         return numNeighbors;
-    }
-
-    enum Direction {
-        NORTHWEST(-1, -1),
-        NORTH(0, -1),
-        NORTHEAST(1, -1),
-        EAST(1, 0),
-        SOUTHEAST(1, 1),
-        SOUTH(0, 1),
-        SOUTHWEST(-1, 1),
-        WEST(-1, 0);
-
-        final int rowOffset;
-        final int columnOffset;
-
-        Direction(int rowOffset, int columnOffset) {
-            this.rowOffset = rowOffset;
-            this.columnOffset = columnOffset;
-        }
     }
 }
 

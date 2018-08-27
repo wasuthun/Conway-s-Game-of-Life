@@ -1,3 +1,5 @@
+package game;
+
 public class Cell {
     private boolean aliveState;
 
@@ -16,5 +18,4 @@ public class Cell {
     public void nextState() {
         this.aliveState = !this.aliveState;
     }
-
 }

@@ -1,14 +1,31 @@
+package game;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Game {
 
     private Board board;
-    public int dimension = 20; // default dimension.
+    private int dimension = 20; // default dimension.
+    private int generation = 1;
+    private Random rand = new Random();
 
     public Game(int dimension) {
         this.dimension = dimension;
         board = new Board(dimension);
+    }
+
+    public void randomBoard() {
+        for (int row = 0; row < 20; row++) {
+            for (int col = 0; col < 20; col++) {
+                boolean isAlive = rand.nextBoolean();
+                if (isAlive)
+                    setCellLiveAt(row, col);
+                else
+                    setCellDieAt(row, col);
+            }
+        }
     }
 
     public int getCountCellAlive() {
@@ -45,10 +62,12 @@ public class Game {
                         toBeChanged.add(cell);
                 }
             }
+        generation++;
         applyTheChangeOfCells(toBeChanged);
     }
 
     private void applyTheChangeOfCells(List<Cell> cells) {
+        // change the cell in to next state.
         for (Cell eachCell : cells)
             eachCell.nextState();
     }
@@ -74,6 +93,6 @@ public class Game {
                     System.out.print("□");
             System.out.println();
         }
+        System.out.println("Generation: " + generation);
     }
-
 }

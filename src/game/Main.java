@@ -1,14 +1,9 @@
-import java.util.Random;
+package game;
 
 public class Main {
     public static void main(String[] arg) {
         Game g = new Game(20);
-        Random rand = new Random();
-        for (int i = 0; i < 20; i++) {
-            for (int j = 0; j < 20; j++) {
-                g.getBoard().getCells()[i][j].setAlive(rand.nextBoolean());
-            }
-        }
+        g.randomBoard();
         g.printGame();
         System.out.println("====================================");
         for (int i = 1; i < 30; i++) {
